@@ -1,0 +1,23 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+int fib(int n)
+{
+	if(n == 0)
+		return fib(0);
+	else if(n == 1)
+		return fib(1);
+	else 
+		return fib(n - 1) + fib(n - 2);
+
+
+}
+int main()
+{
+	int n;
+	int f;
+	cin >> n;
+	f = fib(n);
+	cout << f << endl;
+	return 0;
+}
